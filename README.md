@@ -49,7 +49,10 @@ _Write an algorithm that takes a string with repeated characters and compresses 
 * My only concern with doing that is that how do I reset it back to 0 once I move on to the next number outside of the repeated ones.
 * While reading through the prompt again as well, it looks like I only want to count the characters that are next to each other. Even if there is another character in the string that matches another, if it is not next to them, it will not be counted the same way; it will be counted as a new instance of that character.
 * I am then wondering if I can use a nested loop for checking the value of a character and then counting how many times it may be repeated.
-This one is racking my brain a little bit.
+* This one is racking my brain a little bit.
+* After working on the solution, I realized that I can use a while loop to run a counter as long as the next character is equal to the next one.
+* I will then have an empty variable that will concat the character with the number of times it has been repeated.
+* Once it has finished looping through the string I will return the new variable.
 
 # Question #4: Checking for Uniqueness
 _Write an algorithm that determines whether all the elements in a string are unique. You may not convert the string into an array or use array methods to solve this problem. The algorithm should return a boolean._
@@ -85,3 +88,4 @@ _You may implement any of the above algorithms (or your own) to solve the proble
 * The bubble sort algorithm also looks like it may be the better option in terms of sorting, but I am unclear on the syntax and why it would work.
 * Because I do not understand the why of the algorithm, I do not feel confident explaining it through the process so I think I will stick to my original solution above.
 * Looking at the problem one more time makes me think that it is safe to assume that I will be receiving an array of integers and do not need to error handle unless requested.
+* Upon more research on the methods, I might be able to use a while loop and keep sorting an array as long as the next element is more that the current element.
