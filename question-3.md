@@ -1,9 +1,9 @@
 function compressString(string) {
   let compressedString;
   for (let i = 0; i < string.length; ++) {
-    if(i === i++) {
     let count = 0;
-    let compressedString = `${count++}${i}`;
+    if(i === i++) {
+    let compressedString = compressedString + `${count++}${i}`;
     }
   }
   return compressedString;
@@ -15,10 +15,10 @@ function compressString(string) {
   let compressedWord;
   for (let i = 0; i < wordSize; ++) {
     let count = 0;
-    while (i < wordSize - 1 && string[1] === string[i + 1]) {
+    while (i < wordSize - 1 && string[i] === string[i + 1]) {
       count++;
       i++;
-      compressedWord = `${count}${i}`;
+      compressedWord = compressedWord + `${count}${i}`;
     }
   }
   return compressedWord;
